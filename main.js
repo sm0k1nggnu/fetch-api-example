@@ -19,9 +19,8 @@
 // // Send request
 // request.send();
 
-// const request = fetch('https://ghibliapi.herokuapp.com/films');
-
-const request = fetch('https://swapi.co/api/films');
+const request = fetch('https://ghibliapi.herokuapp.com/films');
+// const request = fetch('https://swapi.co/api/films');
 const app = document.getElementById('app');
 const movies = document.createElement('div');
 movies.setAttribute('class', 'movies');
@@ -30,7 +29,7 @@ app.appendChild(movies);
 request
   .then(data => data.json())
   .then((data) => {
-    console.log(data.results);
+    // console.log(data);
     data.results.forEach((movie) => {
       // console.log(data);
       // console.log(`${movie.title} (${movie.release_date})`);
