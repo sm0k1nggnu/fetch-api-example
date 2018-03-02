@@ -1,0 +1,42 @@
+
+:root { /* Ghibli color palette http://designmadeinjapan.com/magazine/graphic-design/the-rich-colors-of-studio-ghibli/ */
+  --windrisesblue:#0096c3;
+  --windrisesgreen: #16a13a;
+}
+* {
+    box-sizing: border-box
+  }
+  html {
+    font-family: 'Mukta Mahee', sans-serif;
+  }
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+    padding: 1.5rem 2.5rem;
+    background-image: linear-gradient(90deg, var(--windrisesblue) 0%, var(--windrisesgreen) 100%);
+    margin: 0 0 2rem 0;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  p {
+    padding: 0 2.5rem 2.5rem;
+    margin: 0;
+  }
+  .movies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card {
+    margin: 1rem;
+    box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+    transition: all .2s linear;
+    cursor: pointer;
+    line-height: 1.5rem;
+    color: #333;
+  }
+  .card:hover {
+    box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+    transform: translate3D(0, -2px, 0);
+  }
