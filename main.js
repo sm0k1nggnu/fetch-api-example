@@ -1,4 +1,4 @@
-const request = fetch('https://ghibliapi.herokuapp.com/films');
+const request = fetch('https://ghibliapi.herokuapp.com/films');git
 const app = document.getElementById('app');
 const movies = document.createElement('div');
 movies.setAttribute('class', 'movies');
@@ -9,8 +9,8 @@ request
   .then(data => {
     // console.log(data);
     data.forEach((movie) => {
-      const card = document.createElement('div');
-      card.setAttribute('class', 'card');
+      const moviedetail = document.createElement('div');
+      moviedetail.setAttribute('class', 'moviedetail');
 
       const title = document.createElement('h2');
       title.textContent = `${movie.title} (${movie.release_date})`;
@@ -19,13 +19,12 @@ request
       director.textContent = `Directed by: ${movie.director}`;
 
       const desc = document.createElement('p');
-      // movie.description = movie.description.substring(0, 300);
       desc.textContent = `${movie.description}...`;
 
-      movies.appendChild(card);
-      card.appendChild(title);
-      card.appendChild(director);
-      card.appendChild(desc);
+      movies.appendChild(moviedetail);
+      moviedetail.appendChild(title);
+      moviedetail.appendChild(director);
+      moviedetail.appendChild(desc);
     });
   })
   .catch((err) => {

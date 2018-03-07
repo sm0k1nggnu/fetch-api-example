@@ -28,7 +28,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  .card {
+  .moviedetail {
     margin: 1rem;
     box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
     transition: all .2s linear;
@@ -36,7 +36,7 @@
     line-height: 1.5rem;
     color: #333;
   }
-  .card:hover {
+  .moviedetail:hover {
     box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
-    transform: translate3D(0, -2px, 0);
+    transform: translateY(-2px);
   }
