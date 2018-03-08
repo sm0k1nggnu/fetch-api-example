@@ -1,4 +1,4 @@
-const request = fetch('https://ghibliapi.herokuapp.com/films');git
+const request = fetch('https://ghibliapi.herokuapp.com/films');
 const app = document.getElementById('app');
 const movies = document.createElement('div');
 movies.setAttribute('class', 'movies');
